@@ -1,0 +1,22 @@
+{
+    "name": "ohmyfood_website",
+    "version": "1.0.0",
+    "description": "site mobile ohmyfood",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./sass/style.scss:.public/css/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MylenePorter/PorterMylene_3_21102020.git"
+    },
+    "keywords": [
+        "P3"
+    ],
+    "author": "MylenePorter",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MylenePorter/PorterMylene_3_21102020/issues"
+    },
+    "homepage": "https://github.com/MylenePorter/PorterMylene_3_21102020#readme"
+}

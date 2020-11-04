@@ -1,0 +1,19 @@
+/*Location*/
+
+.sub-header__location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $bg-location;
+    padding: 10px 0px 10px 0px;
+    &__icon {
+        padding: 0px 10px 0px 10px;
+    }
+    &__form {
+        background-color: $bg-location;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        width: 110px;
+    }
+}

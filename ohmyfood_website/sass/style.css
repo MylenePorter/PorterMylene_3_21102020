@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+/* pour lancer la compilation du sass en css :  sass --watch ./sass/style.scss ./public/css/style.css */
+
+
+/* Reset CSS */
+
+* {
+    /*Police pour titres et logo : font-family: 'Shrikhand', cursive;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.page {
+    margin: 0;
+}
+
+
+/*Bouton Explorer*/
+
+.button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #FF79DA;
+    padding: 15px 20px 15px 20px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 1px 1px 8px #9356DC;
+    box-shadow: 1px 1px 8px #9356DC;
+}
+
+
+/* CSS pour les screens */
+
+@media all and (min-width: 900px) {
+    /*Logo*/
+    .header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .header__logo {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        width: 30%;
+        zoom: 2;
+    }
+    .header__loc-get {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 70%;
+    }
+}
+
+
+/* CSS pour tablettes */
+
+
+/* CSS pour les mobiles */
+
+
+/* ---HEADER--- */
+
+
+/*Logo*/
+
+.header {
+    /*Location*/
+    /*Présentation entreprise*/
+}
+
+.header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 20px 15px 10px 15px;
+    block-size: 25px;
+}
+
+.header__location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #eaeaea;
+    padding: 10px 0px 10px 0px;
+}
+
+.header__location__icon {
+    padding: 0px 10px 0px 10px;
+}
+
+.header__location__form {
+    background-color: #eaeaea;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    width: 110px;
+}
+
+.header__get-started {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-items: center;
+    background-color: #f6f6f6;
+    padding: 30px 20px 50px 20px;
+    text-align: center;
+}
+
+.header__get-started__slogan {
+    font-size: 23px;
+    font-weight: 700;
+    margin-left: 13px;
+}
+
+.header__intro {
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/* ---MAIN--- */
+
+
+/* CSS pour les mobiles */
+
+@media all and (max-width: 480px) {
+    /*Fonctionnement*/
+    .process {
+        text-align: left;
+        padding: 25px 0px 25px 0px;
+    }
+    .process__steps {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        background-color: #f6f6f6;
+        border-radius: 25px;
+        padding: 25px 15px 25px 0px;
+        margin: 20px 13px 20px 19px;
+        -webkit-box-shadow: 1px 3px 8px lightgrey;
+        box-shadow: 1px 3px 8px lightgrey;
+    }
+    .process__steps__number {
+        font-size: small;
+        font-weight: bold;
+        color: white;
+        padding: 1px 6px 0px 6px;
+        background-color: #9356DC;
+        margin-left: -8px;
+        border-radius: 50%;
+    }
+    .process__steps__icon {
+        font-size: medium;
+        padding: 2px 0px 0px 20px;
+        color: grey;
+    }
+    .process__steps__text {
+        font-weight: 500;
+        padding-left: 20px;
+    }
+    /*Restaurants*/
+    .restaurants {
+        padding: 25px 0px 25px 0px;
+        background-color: #f0f0f0;
+    }
+    .restau {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        height: 200px;
+        background-color: white;
+        border-radius: 25px;
+        -webkit-box-shadow: 1px 3px 8px lightgrey;
+        box-shadow: 1px 3px 8px lightgrey;
+        overflow: hidden;
+        margin: 15px;
+    }
+    .restau__img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        overflow: hidden;
+        height: 70%;
+        width: 100%;
+    }
+    .restau__details {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+    }
+    .restau__details-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 30%;
+        width: 100%;
+        padding: 10px 0px 10px 15px;
+    }
+    .restau__details-text__details__name {
+        font-weight: bold;
+    }
+    .restau__details-text__details__location {
+        font-size: 0.9em;
+        font-weight: 100;
+    }
+    .button--heart {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        font-size: 22px;
+        padding-right: 20px;
+    }
+    .card__tag {
+        position: absolute;
+        color: #008766;
+        background-color: $card-tag;
+        margin: 15px 15px 15px 221.55px;
+        font-size: x-small;
+        text-shadow: #008766;
+        padding: 4px 9px 4px 9px;
+    }
+}
+
+
+/* ---FOOTER---*/
+
+.footer {
+    background-color: #353535;
+    color: white;
+    padding: 20px 0px 30px 20px;
+    font-size: 15px;
+}
+
+.footer__logo {
+    font-family: 'Shrikhand', cursive;
+    padding-bottom: 15px;
+    font-size: 17px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 3px;
+}
+
+.footer__desc--icon {
+    font-weight: bold;
+}
+
+.footer__desc__icon {
+    font-size: 12px;
+    padding-top: 3px;
+    padding-right: 10px;
+}
+
+
+/*# sourceMappingURL=style.css.map */

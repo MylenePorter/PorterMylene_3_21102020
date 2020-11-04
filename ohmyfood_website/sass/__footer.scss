@@ -1,0 +1,32 @@
+@import './_colors';
+
+/* ---FOOTER---*/
+
+.footer {
+    background-color: $bg-footer;
+    color: $white-fonts;
+    padding: 20px 0px 30px 20px;
+    font-size: 15px;
+    &__logo {
+        font-family: 'Shrikhand', cursive;
+        padding-bottom: 15px;
+        font-size: 17px;
+    }
+    a {
+        color: $white-fonts;
+        text-decoration: none;
+    }
+    &__desc {
+        display: flex;
+        flex-direction: row;
+        padding: 3px;
+        &--icon {
+            font-weight: bold;
+        }
+        &__icon {
+            font-size: 12px;
+            padding-top: 3px;
+            padding-right: 10px;
+        }
+    }
+}

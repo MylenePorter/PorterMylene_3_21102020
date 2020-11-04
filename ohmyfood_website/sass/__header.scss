@@ -1,0 +1,28 @@
+@import './_colors';
+
+/* CSS pour tous  */
+
+
+/* ---HEADER--- */
+
+
+/*Logo*/
+
+.header {
+    display: flex;
+    &__logo {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 12px;
+    }
+}
+
+
+/*Flèche retour*/
+
+.icon__arrow-left {
+    align-self: center;
+    padding: 20px 0px 20px 20px;
+    font-size: larger;
+    width: 10%;
+}

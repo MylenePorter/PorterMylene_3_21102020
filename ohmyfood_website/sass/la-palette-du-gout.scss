@@ -1,0 +1,142 @@
+// base
+@import './_reset';
+@import './_colors';
+// components
+// layouts
+@import './_header';
+
+/* Reset CSS */
+
+* {
+    /*Police pour titres et logo footer : font-family: 'Shrikhand', cursive;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: $link-font;
+    text-decoration: none;
+}
+
+.page {
+    margin: 0;
+}
+
+
+/*MAIN*/
+
+
+/*Bouton coeur*/
+
+.icon__heart {
+    margin-left: auto;
+    align-self: center;
+    font-size: 22px;
+}
+
+
+/*Image*/
+
+.sub-header {
+    &__img {
+        width: 100%;
+    }
+}
+
+
+/* MAIN */
+
+.main {
+    background-color: $bg-pages-menu;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+}
+
+
+/*Restaurant*/
+
+.menu {
+    position: relative;
+    &__restau {
+        display: flex;
+        flex-direction: row;
+        padding: 15px 15px 15px 20px;
+        background-color: $bg-pages-menu;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-top: -20px;
+        &__name {
+            font-family: "Shrikhand", cursive;
+            font-size: 24px;
+            font-weight: 200;
+        }
+    }
+}
+
+
+/*Entrées-Plats-Desserts*/
+
+.course {
+    font-weight: 100;
+    padding-bottom: 20px;
+    &__title {
+        font-weight: 200;
+        font-size: larger;
+        padding: 0px 0px 10px 15px;
+    }
+    &__title:after
+    /*ligne bleue sous texte*/
+    {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background-color: $courses-line;
+        left: 0;
+        position: relative;
+        display: block;
+        top: 8px;
+        ;
+    }
+    &__choice {
+        background-color: $bg-color-vignettes;
+        margin: 15px;
+        padding: 10px;
+        box-shadow: 1px 3px 8px $box-shadow;
+        border-radius: 12px;
+        &__title {
+            font-size: large;
+            font-weight: bold;
+        }
+        &__details {
+            display: flex;
+            flex-direction: row;
+            padding: 2px;
+            &__desc {
+                width: 95%;
+                /* pour mettre les ... dans l'animation:
+                text-overflow: ellipsis;
+                white-space: nowrap;*/
+            }
+            &__price {
+                font-weight: bold;
+                width: 5%;
+                justify-content: center;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+
+/*Bouton "commander"*/
+
+.button--order {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    padding: 15px 50px 15px 50px;
+}
+
+
+/* FOOTER */

@@ -1,0 +1,19 @@
+/*Présentation entreprise*/
+
+.hero__get-started {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: $bg-color;
+    padding: 30px 20px 50px 20px;
+    &__slogan {
+        font-size: 23px;
+        font-weight: 700;
+        margin-left: 13px;
+    }
+    text-align: center;
+    &__intro {
+        font-weight: 300;
+        text-align: center;
+    }
+}

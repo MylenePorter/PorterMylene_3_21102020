@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* Resets CSS */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.body {
+  margin: 0;
+}
+
+.page {
+  min-width: 320px;
+}
+
+/*Noir*/
+/*Violet*/
+/*Rose*/
+/*Bleu/Vert*/
+/*Vert*/
+/*Gris*/
+/*Gris clair*/
+/*Gris très clair*/
+/*Gris très très clair*/
+/*Gris foncé*/
+/*Blanc*/
+/*Noir*/
+/*Violet*/
+/*Rose*/
+/*Bleu/Vert*/
+/*Vert*/
+/*Gris*/
+/*Gris clair*/
+/*Gris très clair*/
+/*Gris très très clair*/
+/*Gris foncé*/
+/*Blanc*/
+/* CSS pour tous  */
+/* ---HEADER--- */
+/*Logo*/
+.header {
+  display: flex;
+}
+.header__logo {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+}
+
+/*Flèche retour*/
+.icon__arrow-left {
+  align-self: center;
+  padding: 20px 0px 20px 20px;
+  font-size: larger;
+  width: 10%;
+}
+
+/* Reset CSS */
+* {
+  /*Police pour titres et logo footer : font-family: 'Shrikhand', cursive;*/
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.page {
+  margin: 0;
+}
+
+/*MAIN*/
+/*Bouton coeur*/
+.icon__heart {
+  margin-left: auto;
+  align-self: center;
+  font-size: 22px;
+}
+
+/*Image*/
+.sub-header__img {
+  width: 100%;
+}
+
+/* MAIN */
+.main {
+  background-color: #eaeaea;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 100%;
+}
+
+/*Restaurant*/
+.menu {
+  position: relative;
+}
+.menu__restau {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 15px 15px 20px;
+  background-color: #eaeaea;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: -20px;
+}
+.menu__restau__name {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+/*Entrées-Plats-Desserts*/
+.course {
+  font-weight: 100;
+  padding-bottom: 20px;
+}
+.course__title {
+  font-weight: 200;
+  font-size: larger;
+  padding: 0px 0px 10px 15px;
+}
+.course__title:after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #99E2D0;
+  left: 0;
+  position: relative;
+  display: block;
+  top: 8px;
+}
+.course__choice {
+  background-color: white;
+  margin: 15px;
+  padding: 10px;
+  box-shadow: 1px 3px 8px #a2a2a2;
+  border-radius: 12px;
+}
+.course__choice__title {
+  font-size: large;
+  font-weight: bold;
+}
+.course__choice__details {
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+}
+.course__choice__details__desc {
+  width: 95%;
+  /* pour mettre les ... dans l'animation:
+  text-overflow: ellipsis;
+  white-space: nowrap;*/
+}
+.course__choice__details__price {
+  font-weight: bold;
+  width: 5%;
+  justify-content: center;
+  padding-right: 5px;
+}
+
+/*Bouton "commander"*/
+.button--order {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  padding: 15px 50px 15px 50px;
+}
+
+/* FOOTER */
+
+/*# sourceMappingURL=la-palette-du-gout.css.map */
