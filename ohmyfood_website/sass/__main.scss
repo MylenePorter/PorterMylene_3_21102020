@@ -1,151 +1,143 @@
-@import './_colors';
-
-/* CSS pour les screens */
-
-@media all and (min-width:900px) {
-    .process__block {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .restau {
-        width: 65%;
-        &__block {
+        @import './_colors';
+        /* CSS pour les screens */
+        
+        @media all and (min-width:900px) {
+            .process__block {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .restau {
+                width: 65%;
+                &__block {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+        /* CSS pour tablettes */
+        
+        @media all and (min-width:480px) and (max-width: 900px) {
+            .restau {
+                width: 40%;
+                &__block {
+                    display: flex;
+                    justify-content: center;
+                    justify-content: space-evenly;
+                    flex-flow: row wrap;
+                }
+            }
+        }
+        /* ---MAIN--- */
+        
+        a {
+            color: $link-font;
+            text-decoration: none;
+        }
+        
+        h2 {
+            padding-left: 15px;
+        }
+        /* CSS pour les mobiles */
+        /*Fonctionnement*/
+        
+        .process {
+            text-align: left;
+            padding: 25px 0px 25px 0px;
+            &__block {
+                width: max-content;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            &__steps {
+                display: flex;
+                flex-direction: row;
+                background-color: $bg-color;
+                border-radius: 25px;
+                padding: 25px 15px 25px 0px;
+                margin: 20px 13px 20px 19px;
+                box-shadow: 1px 3px 8px $box-shadow;
+                transition: background-color 500ms;
+                &:hover {
+                    background-color: $bg-hover-lighter;
+                    box-shadow: 1px 1px 12px $box-shadow;
+                }
+                &__number {
+                    font-size: small;
+                    font-weight: bold;
+                    color: $white_fonts;
+                    padding: 1px 6px 0px 6px;
+                    background-color: $process-number;
+                    margin-left: -8px;
+                    border-radius: 50%;
+                }
+                &__icon {
+                    font-size: medium;
+                    padding: 2px 0px 0px 20px;
+                    color: $icon-color;
+                    &:hover {
+                        color: $hover-icon;
+                    }
+                }
+                &__text {
+                    font-weight: 500;
+                    padding-left: 20px;
+                }
+            }
+        }
+        /*Restaurants*/
+        
+        .restaurants {
+            padding: 25px 0px 25px 0px;
+            background-color: $bg-color;
+        }
+        
+        .restau {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            background-color: $bg-color-vignettes;
+            border-radius: 25px;
+            box-shadow: 1px 3px 8px lightgrey;
+            overflow: hidden;
+            margin: 15px;
+            position: relative;
+            &__img {
+                height: 70%;
+                width: 100%;
+            }
+            &__details {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+            }
+            &__details-text {
+                display: flex;
+                flex-direction: column;
+                height: 30%;
+                width: 100%;
+                padding: 10px 0px 10px 15px;
+                &__name {
+                    font-weight: bold;
+                }
+                &__location {
+                    font-size: 0.9em;
+                    font-weight: 100;
+                }
+            }
         }
-    }
-}
-
-
-/* CSS pour tablettes */
-
-@media all and (min-width:480px) and (max-width: 900px) {
-    .restau {
-        width: 40%;
-        &__block {
-            display: flex;
-            justify-content: center;
-            justify-content: space-evenly;
-            flex-flow: row wrap;
+        
+        .button--heart {
+            align-self: center;
+            font-size: 22px;
+            padding-right: 20px;
         }
-    }
-}
-
-
-/* ---MAIN--- */
-
-a {
-    color: $link-font;
-    text-decoration: none;
-}
-
-h2 {
-    padding-left: 15px;
-}
-
-
-/* CSS pour les mobiles */
-
-
-/*Fonctionnement*/
-
-.process {
-    text-align: left;
-    padding: 25px 0px 25px 0px;
-    &__block {
-        width: max-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    &__steps {
-        display: flex;
-        flex-direction: row;
-        background-color: $bg-color;
-        border-radius: 25px;
-        padding: 25px 15px 25px 0px;
-        margin: 20px 13px 20px 19px;
-        box-shadow: 1px 3px 8px $box-shadow;
-        transition: background-color 500ms;
-        &:hover {
-            background-color: $bg-hover-lighter;
-            box-shadow: 1px 1px 12px $box-shadow;
+        
+        .card__tag {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: $font_card-tag;
+            background-color: #99E2D0;
+            font-size: x-small;
+            text-shadow: $font_card-tag;
+            padding: 4px 9px 4px 9px;
         }
-        &__number {
-            font-size: small;
-            font-weight: bold;
-            color: $white_fonts;
-            padding: 1px 6px 0px 6px;
-            background-color: $process-number;
-            margin-left: -8px;
-            border-radius: 50%;
-        }
-        &__icon {
-            font-size: medium;
-            padding: 2px 0px 0px 20px;
-            color: $icon-color;
-        }
-        &__text {
-            font-weight: 500;
-            padding-left: 20px;
-        }
-    }
-}
-
-
-/*Restaurants*/
-
-.restaurants {
-    padding: 25px 0px 25px 0px;
-    background-color: $bg-color;
-}
-
-.restau {
-    display: flex;
-    flex-direction: column;
-    background-color: $bg-color-vignettes;
-    border-radius: 25px;
-    box-shadow: 1px 3px 8px lightgrey;
-    overflow: hidden;
-    margin: 15px;
-    position: relative;
-    &__img {
-        height: 70%;
-        width: 100%;
-    }
-    &__details {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    &__details-text {
-        display: flex;
-        flex-direction: column;
-        height: 30%;
-        width: 100%;
-        padding: 10px 0px 10px 15px;
-        &__name {
-            font-weight: bold;
-        }
-        &__location {
-            font-size: 0.9em;
-            font-weight: 100;
-        }
-    }
-}
-
-.button--heart {
-    align-self: center;
-    font-size: 22px;
-    padding-right: 20px;
-}
-
-.card__tag {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: $font_card-tag;
-    background-color: #99E2D0;
-    font-size: x-small;
-    text-shadow: $font_card-tag;
-    padding: 4px 9px 4px 9px;
-}

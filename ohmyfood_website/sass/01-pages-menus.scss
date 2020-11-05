@@ -1,0 +1,26 @@
+// base
+@import './_reset';
+@import './_colors';
+// components
+@import "./_button";
+@import "./_icon";
+// layouts
+@import './_header';
+@import './_sub-header';
+@import './_menu';
+@import './_course';
+
+/* Reset CSS */
+
+
+/* MAIN */
+
+
+/*Image*/
+
+
+/* MAIN */
+
+.main {
+    background-color: $bg-pages-menu;
+}

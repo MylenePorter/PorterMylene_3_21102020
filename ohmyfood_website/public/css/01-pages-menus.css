@@ -34,6 +34,53 @@
 /*Gris très très clair*/
 /*Gris foncé*/
 /*Blanc*/
+/* ***BUTTON*** */
+/*Bouton Explorer*/
+.button {
+  width: fit-content;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #FF79DA;
+  padding: 15px 20px 15px 20px;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 1px 8px #9356DC;
+  transition: background-color 500ms;
+}
+.button:hover {
+  background-color: #ff79d9aa;
+  box-shadow: 1px 1px 12px #9356DC;
+}
+
+/*Bouton "commander"*/
+.button--order {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  padding: 15px 50px 15px 50px;
+}
+
+/*Bouton coeur*/
+.icon__heart {
+  margin-left: auto;
+  align-self: center;
+  font-size: 22px;
+}
+
+/*Noir*/
+/*Violet*/
+/*Rose*/
+/*Bleu/Vert*/
+/*Vert*/
+/*Gris*/
+/*Gris clair*/
+/*Gris très clair*/
+/*Gris très très clair*/
+/*Gris foncé*/
+/*Blanc*/
 /* CSS pour tous  */
 /* ---HEADER--- */
 /*Logo*/
@@ -54,39 +101,26 @@
   width: 10%;
 }
 
-/* Reset CSS */
-* {
-  /*Police pour titres et logo footer : font-family: 'Shrikhand', cursive;*/
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-.page {
-  margin: 0;
-}
-
-/*MAIN*/
-/*Bouton coeur*/
-.icon__heart {
-  margin-left: auto;
-  align-self: center;
-  font-size: 22px;
-}
-
-/*Image*/
-.sub-header__img {
-  width: 100%;
-}
-
-/* MAIN */
-.main {
+/*Location*/
+.sub-header__location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: #eaeaea;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  padding: 10px 0px 10px 0px;
+}
+.sub-header__location__icon {
+  padding: 0px 10px 0px 10px;
+}
+.sub-header__location__form {
+  background-color: #eaeaea;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  width: 110px;
+}
+
+.sub-header__img {
   width: 100%;
 }
 
@@ -158,15 +192,12 @@ a {
   padding-right: 5px;
 }
 
-/*Bouton "commander"*/
-.button--order {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 70px;
-  padding: 15px 50px 15px 50px;
+/* Reset CSS */
+/* MAIN */
+/*Image*/
+/* MAIN */
+.main {
+  background-color: #eaeaea;
 }
 
-/* FOOTER */
-
-/*# sourceMappingURL=la-palette-du-gout.css.map */
+/*# sourceMappingURL=01-pages-menus.css.map */

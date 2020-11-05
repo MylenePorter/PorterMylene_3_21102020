@@ -1,1 +1,19 @@
-.menu {}
+/*Restaurant*/
+
+.menu {
+    position: relative;
+    &__restau {
+        display: flex;
+        flex-direction: row;
+        padding: 15px 15px 15px 20px;
+        background-color: $bg-pages-menu;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-top: -20px;
+        &__name {
+            font-family: "Shrikhand", cursive;
+            font-size: 24px;
+            font-weight: 200;
+        }
+    }
+}

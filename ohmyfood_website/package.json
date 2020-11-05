@@ -4,7 +4,7 @@
     "description": "site mobile ohmyfood",
     "main": "index.js",
     "scripts": {
-        "sass": "sass --watch ./sass/style.scss:.public/css/style.css"
+        "sass": "sass --watch /ohmyfood_website/sass/style.scss:/ohmyfood_website/public/css/style.css"
     },
     "repository": {
         "type": "git",
