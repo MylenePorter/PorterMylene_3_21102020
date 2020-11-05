@@ -11,6 +11,7 @@
 
 .page {
   min-width: 320px;
+  margin: 0;
 }
 
 /*Noir*/
@@ -53,6 +54,22 @@
 .button:hover {
   background-color: #ff79d9aa;
   box-shadow: 1px 1px 12px #9356DC;
+}
+
+/*Bouton "commander"*/
+.button--order {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  padding: 15px 50px 15px 50px;
+}
+
+/*Bouton coeur*/
+.icon__heart {
+  margin-left: auto;
+  align-self: center;
+  font-size: 22px;
 }
 
 /*Noir*/
@@ -103,6 +120,10 @@
   font-size: 14px;
   font-weight: bold;
   width: 110px;
+}
+
+.sub-header__img {
+  width: 100%;
 }
 
 /*Présentation entreprise*/
