@@ -5,12 +5,15 @@ $link-font:black;
 /*Violet*/
 
 $process-number:#9356DC;
+$bg-button-radient: #9356DC;
 $button-shadow: #9356DC;
 $hover-icon: #9356DC;
+$spinner_purple:#9356DC;
 
 /*Rose*/
 
 $bg-button:#FF79DA;
+$spinner_pink:#FF79DA;
 $bg-button-lighter :#ff79d9aa;
 $bg-hover-lighter: #ff79d929;
 
@@ -18,10 +21,11 @@ $bg-hover-lighter: #ff79d929;
 
 $card-tag: #99E2D0;
 $courses-line: #99E2D0;
+$clic-course:#99E2D0;
 
 /*Vert*/
 
-$font_card-tag:#008766;
+$font_card-tag: #008766;
 
 /*Gris*/
 
@@ -49,3 +53,8 @@ $bg-footer:#353535;
 $white-fonts:white;
 $bg-color-vignettes:white;
 $bg-color-header-menu: white;
+
+/*Gradient*/
+
+$gradient-button: linear-gradient($bg-button, $bg-button-radient);
+$gradient-heart: linear-gradient($bg-button, $bg-button-radient);

@@ -44,19 +44,20 @@
   color: white;
   font-size: 16px;
   font-weight: 500;
-  background-color: #FF79DA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   padding: 15px 20px 15px 20px;
   border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
   -webkit-box-shadow: 1px 1px 8px #9356DC;
           box-shadow: 1px 1px 8px #9356DC;
-  -webkit-transition: background-color 500ms;
-  transition: background-color 500ms;
+  -webkit-transition: background 1000ms;
+  transition: background 1000ms;
 }
 
 .button:hover {
-  background-color: #ff79d9aa;
+  background: #ff79d9aa;
   -webkit-box-shadow: 1px 1px 12px #9356DC;
           box-shadow: 1px 1px 12px #9356DC;
 }
@@ -196,7 +197,14 @@
   top: 8px;
 }
 
-.course__choice {
+.course__block {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.course__block__choice {
   background-color: white;
   margin: 15px;
   padding: 10px;
@@ -205,12 +213,19 @@
   border-radius: 12px;
 }
 
-.course__choice__title {
-  font-size: large;
-  font-weight: bold;
+.course__block__choice:hover > .course__block__animation {
+  width: 100px;
 }
 
-.course__choice__details {
+.course__block__choice__title {
+  font-size: large;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.course__block__choice__details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,20 +236,26 @@
   padding: 2px;
 }
 
-.course__choice__details__desc {
+.course__block__choice__details__desc {
   width: 95%;
-  /* pour mettre les ... dans l'animation:
-                text-overflow: ellipsis;
-                white-space: nowrap;*/
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.course__choice__details__price {
+.course__block__choice__details__price {
   font-weight: bold;
-  width: 5%;
+  width: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 5px;
+}
+
+.course__block__animation {
+  width: 0;
+  background-color: #99E2D0;
+  -webkit-transition: width .5s;
+  transition: width .5s;
 }
 
 .main {

@@ -25,6 +25,7 @@
 /*Gris très très clair*/
 /*Gris foncé*/
 /*Blanc*/
+/*Gradient*/
 /*Noir*/
 /*Violet*/
 /*Rose*/
@@ -36,53 +37,7 @@
 /*Gris très très clair*/
 /*Gris foncé*/
 /*Blanc*/
-/* ***BUTTON*** */
-/*Bouton Explorer*/
-.button {
-  width: fit-content;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: #FF79DA;
-  padding: 15px 20px 15px 20px;
-  border-radius: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 1px 1px 8px #9356DC;
-  transition: background-color 500ms;
-}
-.button:hover {
-  background-color: #ff79d9aa;
-  box-shadow: 1px 1px 12px #9356DC;
-}
-
-/*Bouton "commander"*/
-.button--order {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 70px;
-  padding: 15px 50px 15px 50px;
-}
-
-/*Bouton coeur*/
-.icon__heart {
-  margin-left: auto;
-  align-self: center;
-  font-size: 22px;
-}
-
-/*Noir*/
-/*Violet*/
-/*Rose*/
-/*Bleu/Vert*/
-/*Vert*/
-/*Gris*/
-/*Gris clair*/
-/*Gris très clair*/
-/*Gris très très clair*/
-/*Gris foncé*/
-/*Blanc*/
+/*Gradient*/
 /* CSS pour tous  */
 /* ---HEADER--- */
 /*Logo*/
@@ -103,6 +58,18 @@
   width: 10%;
 }
 
+/*Noir*/
+/*Violet*/
+/*Rose*/
+/*Bleu/Vert*/
+/*Vert*/
+/*Gris*/
+/*Gris clair*/
+/*Gris très clair*/
+/*Gris très très clair*/
+/*Gris foncé*/
+/*Blanc*/
+/*Gradient*/
 /*Location*/
 .sub-header__location {
   display: flex;
@@ -126,6 +93,18 @@
   width: 100%;
 }
 
+/*Noir*/
+/*Violet*/
+/*Rose*/
+/*Bleu/Vert*/
+/*Vert*/
+/*Gris*/
+/*Gris clair*/
+/*Gris très clair*/
+/*Gris très très clair*/
+/*Gris foncé*/
+/*Blanc*/
+/*Gradient*/
 /*Présentation entreprise*/
 .hero__get-started {
   display: flex;
@@ -156,33 +135,231 @@
 /*Gris très très clair*/
 /*Gris foncé*/
 /*Blanc*/
-/* CSS pour les screens */
-@media all and (min-width: 900px) {
-  .process__block {
-    display: flex;
-    justify-content: space-evenly;
-  }
+/*Gradient*/
+/* ---FOOTER---*/
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px 0px 30px 20px;
+  font-size: 15px;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  padding-bottom: 15px;
+  font-size: 17px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer__desc {
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+}
+.footer__desc--icon {
+  font-weight: bold;
+}
+.footer__desc__icon {
+  font-size: 12px;
+  padding-top: 3px;
+  padding-right: 10px;
+}
 
-  .restau {
-    width: 65%;
+/*Noir*/
+/*Violet*/
+/*Rose*/
+/*Bleu/Vert*/
+/*Vert*/
+/*Gris*/
+/*Gris clair*/
+/*Gris très clair*/
+/*Gris très très clair*/
+/*Gris foncé*/
+/*Blanc*/
+/*Gradient*/
+#loader {
+  padding-top: 150px;
+  height: 900px;
+  animation: appear ease-in 3s forwards;
+}
+
+@keyframes appear {
+  99% {
+    padding-top: 150px;
+    height: 900px;
   }
-  .restau__block {
-    display: flex;
-    flex-direction: row;
+  100% {
+    padding-top: 0px;
+    height: 0px;
+    overflow: hidden;
   }
 }
-/* CSS pour tablettes */
-@media all and (min-width: 480px) and (max-width: 900px) {
-  .restau {
-    width: 40%;
+.loader__spinning {
+  border: 16px solid #FF79DA;
+  border-top: 16px solid #9356DC;
+  border-right: 16px solid #FF79DA;
+  border-bottom: 16px solid #9356DC;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: spin 1s linear infinite;
+  transition: all 1s ease;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  .restau__block {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
+  100% {
+    transform: rotate(360deg);
   }
 }
+/*Noir*/
+/*Violet*/
+/*Rose*/
+/*Bleu/Vert*/
+/*Vert*/
+/*Gris*/
+/*Gris clair*/
+/*Gris très clair*/
+/*Gris très très clair*/
+/*Gris foncé*/
+/*Blanc*/
+/*Gradient*/
+/* ***BUTTON*** */
+/*Bouton Explorer*/
+.button {
+  width: fit-content;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 15px 20px 15px 20px;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 1px 8px #9356DC;
+}
+.button:hover {
+  background: #ff79d9aa;
+  box-shadow: 1px 1px 12px #9356DC;
+}
+
+/*Bouton "commander"*/
+.button--order {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  padding: 15px 50px 15px 50px;
+}
+
+/*Bouton coeur*/
+.restau__button-like {
+  align-self: center;
+  padding-right: 10px;
+  font-size: 22px;
+  padding-right: 20px;
+}
+
+.menu__button-like {
+  align-self: center;
+  padding-right: 10px;
+  font-size: 22px;
+  margin-left: auto;
+}
+
+.button-like--full {
+  position: absolute;
+  height: 0%;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: height 1000ms;
+}
+
+.button-like--empty {
+  position: absolute;
+  color: #000;
+}
+
+.button-like__container {
+  position: relative;
+  height: 25px;
+  width: 25px;
+}
+
+.button-like__container:hover > .button-like--full {
+  height: 100%;
+  transition: height 1000ms;
+}
+
+.button-like__container:hover > .button-like--empty {
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Noir*/
+/*Violet*/
+/*Rose*/
+/*Bleu/Vert*/
+/*Vert*/
+/*Gris*/
+/*Gris clair*/
+/*Gris très clair*/
+/*Gris très très clair*/
+/*Gris foncé*/
+/*Blanc*/
+/*Gradient*/
+/*Bouton coeur*/
+.icon__heart {
+  margin-left: auto;
+  align-self: center;
+  font-size: 22px;
+}
+
+/*Noir*/
+/*Violet*/
+/*Rose*/
+/*Bleu/Vert*/
+/*Vert*/
+/*Gris*/
+/*Gris clair*/
+/*Gris très clair*/
+/*Gris très très clair*/
+/*Gris foncé*/
+/*Blanc*/
+/*Gradient*/
+.card__tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #008766;
+  background-color: #99E2D0;
+  font-size: x-small;
+  text-shadow: #008766;
+  padding: 4px 9px 4px 9px;
+}
+
+/*Noir*/
+/*Violet*/
+/*Rose*/
+/*Bleu/Vert*/
+/*Vert*/
+/*Gris*/
+/*Gris clair*/
+/*Gris très clair*/
+/*Gris très très clair*/
+/*Gris foncé*/
+/*Blanc*/
+/*Gradient*/
 /* ---MAIN--- */
 a {
   color: black;
@@ -193,8 +370,13 @@ h2 {
   padding-left: 15px;
 }
 
-/* CSS pour les mobiles */
 /*Fonctionnement*/
+@media all and (min-width: 900px) {
+  .process__block {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 .process {
   text-align: left;
   padding: 25px 0px 25px 0px;
@@ -240,6 +422,41 @@ h2 {
   padding-left: 20px;
 }
 
+/*Noir*/
+/*Violet*/
+/*Rose*/
+/*Bleu/Vert*/
+/*Vert*/
+/*Gris*/
+/*Gris clair*/
+/*Gris très clair*/
+/*Gris très très clair*/
+/*Gris foncé*/
+/*Blanc*/
+/*Gradient*/
+/* CSS pour les screens */
+@media all and (min-width: 900px) {
+  .restau {
+    width: 65%;
+  }
+  .restau__block {
+    display: flex;
+    flex-direction: row;
+  }
+}
+/* CSS pour tablettes */
+@media all and (min-width: 480px) and (max-width: 900px) {
+  .restau {
+    width: 40%;
+  }
+  .restau__block {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+  }
+}
+/* CSS pour les mobiles */
 /*Restaurants*/
 .restaurants {
   padding: 25px 0px 25px 0px;
@@ -278,64 +495,6 @@ h2 {
 .restau__details-text__location {
   font-size: 0.9em;
   font-weight: 100;
-}
-
-.button--heart {
-  align-self: center;
-  font-size: 22px;
-  padding-right: 20px;
-}
-
-.card__tag {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: #008766;
-  background-color: #99E2D0;
-  font-size: x-small;
-  text-shadow: #008766;
-  padding: 4px 9px 4px 9px;
-}
-
-/*Noir*/
-/*Violet*/
-/*Rose*/
-/*Bleu/Vert*/
-/*Vert*/
-/*Gris*/
-/*Gris clair*/
-/*Gris très clair*/
-/*Gris très très clair*/
-/*Gris foncé*/
-/*Blanc*/
-/* ---FOOTER---*/
-.footer {
-  background-color: #353535;
-  color: white;
-  padding: 20px 0px 30px 20px;
-  font-size: 15px;
-}
-.footer__logo {
-  font-family: "Shrikhand", cursive;
-  padding-bottom: 15px;
-  font-size: 17px;
-}
-.footer a {
-  color: white;
-  text-decoration: none;
-}
-.footer__desc {
-  display: flex;
-  flex-direction: row;
-  padding: 3px;
-}
-.footer__desc--icon {
-  font-weight: bold;
-}
-.footer__desc__icon {
-  font-size: 12px;
-  padding-top: 3px;
-  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+/*Fonctionnement*/
+
+@media all and (min-width:900px) {
+    .process__block {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.process {
+    text-align: left;
+    padding: 25px 0px 25px 0px;
+    &__block {
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__steps {
+        display: flex;
+        flex-direction: row;
+        background-color: $bg-color;
+        border-radius: 25px;
+        padding: 25px 15px 25px 0px;
+        margin: 20px 13px 20px 19px;
+        box-shadow: 1px 3px 8px $box-shadow;
+        transition: background-color 500ms;
+        &:hover {
+            background-color: $bg-hover-lighter;
+            box-shadow: 1px 1px 12px $box-shadow;
+        }
+        &__number {
+            font-size: small;
+            font-weight: bold;
+            color: $white_fonts;
+            padding: 1px 6px 0px 6px;
+            background-color: $process-number;
+            margin-left: -8px;
+            border-radius: 50%;
+        }
+        &__icon {
+            font-size: medium;
+            padding: 2px 0px 0px 20px;
+            color: $icon-color;
+            &:hover {
+                color: $hover-icon;
+            }
+        }
+        &__text {
+            font-weight: 500;
+            padding-left: 20px;
+        }
+    }
+}

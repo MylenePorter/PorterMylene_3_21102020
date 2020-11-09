@@ -1,14 +1,14 @@
 // base
-@import './_reset';
-@import './_colors';
-// components
-@import "./_button";
-@import "./_icon";
+@import '../sass/01_base/__reset';
+//utils
+@import '../sass/02_utils/__colors';
 // layouts
-@import './_header';
-@import './_sub-header';
-@import './_menu';
-@import './_course';
-.main {
-    background-color: $bg-pages-menu;
-}
+@import '../sass/03_layouts/__header';
+@import '../sass/03_layouts/__sub-header';
+@import '../sass/03_layouts/__footer';
+// components
+@import "../sass/04_components/__button";
+@import "../sass/04_components/__icon";
+//pages
+@import '../sass/05_pages/__menu';
+@import '../sass/05_pages/__course';

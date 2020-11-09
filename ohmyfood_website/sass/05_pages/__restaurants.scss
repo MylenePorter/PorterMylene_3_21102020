@@ -1,0 +1,73 @@
+@import '../02_utils/_colors';
+
+/* CSS pour les screens */
+
+@media all and (min-width:900px) {
+    .restau {
+        width: 65%;
+        &__block {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+
+/* CSS pour tablettes */
+
+@media all and (min-width:480px) and (max-width: 900px) {
+    .restau {
+        width: 40%;
+        &__block {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            flex-flow: row wrap;
+        }
+    }
+}
+
+
+/* CSS pour les mobiles */
+
+
+/*Restaurants*/
+
+.restaurants {
+    padding: 25px 0px 25px 0px;
+    background-color: $bg-color;
+}
+
+.restau {
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-color-vignettes;
+    border-radius: 25px;
+    box-shadow: 1px 3px 8px lightgrey;
+    overflow: hidden;
+    margin: 15px;
+    position: relative;
+    &__img {
+        height: 70%;
+        width: 100%;
+    }
+    &__details {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    &__details-text {
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        width: 100%;
+        padding: 10px 0px 10px 15px;
+        &__name {
+            font-weight: bold;
+        }
+        &__location {
+            font-size: 0.9em;
+            font-weight: 100;
+        }
+    }
+}

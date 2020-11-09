@@ -1,3 +1,5 @@
+@import '../02_utils/_colors';
+
 /*Restaurant*/
 
 .menu {
@@ -16,4 +18,8 @@
             font-weight: 200;
         }
     }
+}
+
+.main {
+    background-color: $bg-pages-menu;
 }

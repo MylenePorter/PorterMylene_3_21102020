@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Oh My Food! Paris</title>
-    <link rel="stylesheet" href="./ohmyfood_website/public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
     <link rel=" stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -13,7 +13,12 @@
 
 </head>
 
+
 <body class="body">
+    <div id="loader">
+        <div class="loader__spinning"></div>
+    </div>
+
     <div class="page">
 
         <!-- ***HEADER*** -->
@@ -21,7 +26,7 @@
         <header class="header">
 
             <!--Logo-->
-            <img class="header__logo" src="./ohmyfood_website/img/logo/ohmyfood@2x.svg" alt="Logo Oh myfood">
+            <img class="header__logo" src="../ohmyfood_website/img/logo/ohmyfood@2x.svg" alt="Logo Oh myfood">
 
         </header>
 
@@ -83,62 +88,75 @@
 
                 <div class="restau__block">
                     <div class="restau">
-                        <img class="restau__img" src="./ohmyfood_website/img/restaurants/la-palette-du-gout.jpg" alt="La palette du goût">
+                        <img class="restau__img" src="./img/restaurants/la-palette-du-gout.jpg" alt="La palette du goût">
                         <div class="card__tag">Nouveau</div>
                         <div class="restau__details">
                             <div class="restau__details-text">
-                                <a href="./la-palette-du-gout.html">
+                                <a href="./html/la-palette-du-gout.html">
                                     <div class="restau__details-text__name">La palette du goût</div>
 
                                     <div class="restau__details-text__location">Ménilmontant</div>
                                 </a>
                             </div>
-
-                            <!--rajouter effet bouton-->
-                            <i class="button--heart far fa-heart"></i>
+                            <div class="restau__button-like">
+                                <div class="button-like__container">
+                                    <i class="fas fa-heart button-like button-like--full"></i>
+                                    <i class="far fa-heart button-like button-like--empty"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="restau">
-                        <img class="restau__img" src="./ohmyfood_website/img/restaurants/la-note-enchantee.jpg" alt="La note enchantée">
+                        <img class="restau__img" src="./img/restaurants/la-note-enchantee.jpg" alt="La note enchantée">
                         <div class="card__tag">Nouveau</div>
                         <div class="restau__details">
                             <div class="restau__details-text">
-                                <a href="./la-note-enchantee.html">
+                                <a href="./html/la-note-enchantee.html">
                                     <div class="restau__details-text__name">La note enchantée</div>
                                     <div class="restau__details-text__location">Charonne</div>
                                 </a>
                             </div>
-
-                            <i class="button--heart far fa-heart"></i>
+                            <div class="restau__button-like">
+                                <div class="button-like__container">
+                                    <i class="fas fa-heart button-like button-like--full"></i>
+                                    <i class="far fa-heart button-like button-like--empty"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="restau">
-                        <img class="restau__img" src="./ohmyfood_website/img/restaurants/a-la-francaise.jpg" alt="A la française">
+                        <img class="restau__img" src="./img/restaurants/a-la-francaise.jpg" alt="A la française">
                         <div class="restau__details">
                             <div class="restau__details-text">
-                                <a href="./a-la-francaise.html">
+                                <a href="./html/a-la-francaise.html">
                                     <div class="restau__details-text__name">A la française</div>
                                     <div class="restau__details-text__location">Cité Rouge</div>
                                 </a>
                             </div>
-
-                            <!--rajouter effet bouton-->
-                            <i class="button--heart far fa-heart"></i>
+                            <div class="restau__button-like">
+                                <div class="button-like__container">
+                                    <i class="fas fa-heart button-like button-like--full"></i>
+                                    <i class="far fa-heart button-like button-like--empty"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="restau">
-                        <img class="restau__img" src="./ohmyfood_website/img/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens">
+                        <img class="restau__img" src="./img/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens">
                         <div class="restau__details">
                             <div class="restau__details-text">
-                                <a href="./le-delice-des-sens.html">
+                                <a href="./html/le-delice-des-sens.html">
                                     <div class="restau__details-text__name">Le délice des sens</div>
-                                    <div class="restau__details_text__location">Folie-Méricourt</div>
+                                    <div class="restau__details-text__location">Folie-Méricourt</div>
                                 </a>
                             </div>
-
-                            <!--rajouter effet bouton-->
-                            <i class="button--heart far fa-heart"></i>
+                            <div class="restau__button-like">
+                                <div class="button-like__container">
+                                    <i class="fas fa-heart button-like button-like--full"></i>
+                                    <i class="far fa-heart button-like button-like--empty"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -166,6 +184,8 @@
 
         </footer>
     </div>
+
 </body>
+
 
 </html>

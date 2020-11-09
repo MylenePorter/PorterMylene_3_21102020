@@ -1,14 +1,20 @@
 /* pour lancer la compilation du sass en css :  sass --watch ./sass/style.scss ./public/css/style.css */
 
 // base
-@import './_reset';
-@import './_colors';
-// components
-@import './_button';
-@import './_icon';
+@import '../sass/01_base/__reset';
+// utils
+@import '../sass/02_utils/__colors';
 //layouts
-@import './_header';
-@import './_sub-header';
-@import './_hero';
-@import './_main';
-@import './_footer';
+@import '../sass/03_layouts/__header';
+@import '../sass/03_layouts/__sub-header';
+@import '../sass/03_layouts/__hero';
+@import '../sass/03_layouts/__footer';
+// components
+@import '../sass/04_components/__loader';
+@import '../sass/04_components/__button';
+@import '../sass/04_components/__icon';
+@import '../sass/04_components/__card__tag';
+// pages
+@import '../sass/05_pages/__main';
+@import '../sass/05_pages/__process';
+@import '../sass/05_pages/__restaurants';

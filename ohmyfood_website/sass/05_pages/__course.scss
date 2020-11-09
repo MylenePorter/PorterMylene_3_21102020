@@ -1,0 +1,115 @@
+    @import '../02_utils/_colors';
+    /*Entrées-Plats-Desserts*/
+    
+    .course {
+        font-weight: 100;
+        padding-bottom: 20px;
+        &__title {
+            font-weight: 200;
+            font-size: larger;
+            padding: 0px 0px 10px 15px;
+        }
+        &__title:after
+        /*ligne bleue sous texte*/
+        {
+            content: "";
+            width: 50px;
+            height: 3px;
+            background-color: $courses-line;
+            left: 0;
+            position: relative;
+            display: block;
+            top: 8px;
+        }
+        &__block {
+            display: flex;
+            margin: 15px;
+            &__choice {
+                width: 95%;
+                background-color: $bg-color-vignettes;
+                padding: 10px 0px 10px 10px;
+                box-shadow: 1px 3px 8px $box-shadow;
+                border-radius: 12px;
+                &__title {
+                    font-size: large;
+                    font-weight: bold;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                &__details {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 2px;
+                    &__desc {
+                        width: 95%;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                    &__price {
+                        font-weight: bold;
+                        width: 15%;
+                        justify-content: center;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+            }
+            &__animation {
+                flex-direction: row;
+                color: white;
+                width: 0px;
+                background-color: #99E2D0;
+                align-self: center;
+                text-align: center;
+                border-top-right-radius: 12px;
+                border-bottom-right-radius: 12px;
+                box-shadow: 1px 3px 8px #a2a2a2;
+                transition: width 2s;
+                overflow: hidden;
+            }
+        }
+    }
+    
+    @keyframes check-slide {
+        0% {
+            width: 0%;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        100% {
+            width: 30px;
+            padding: 25px;
+        }
+    }
+    
+    .course__block:hover>.course__block__animation {
+        animation: check-slide 0.4s ease-in forwards;
+    }
+    
+    @keyframes squared {
+        0% {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            box-shadow: 0;
+            padding-right: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        100% {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            box-shadow: 0;
+            padding-right: 0px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    
+    .course__block:hover>.course__block__choice {
+        animation: squared 0.4s ease-in forwards;
+    }
