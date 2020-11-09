@@ -93,7 +93,7 @@
         0% {
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
-            box-shadow: 0;
+            box-shadow: none;
             padding-right: 10px;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -102,7 +102,7 @@
         100% {
             border-top-right-radius: 0px;
             border-bottom-right-radius: 0px;
-            box-shadow: 0;
+            box-shadow: none;
             padding-right: 0px;
             text-overflow: ellipsis;
             overflow: hidden;

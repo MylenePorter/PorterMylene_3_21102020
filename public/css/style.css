@@ -346,7 +346,7 @@
   color: #008766;
   background-color: #99E2D0;
   font-size: x-small;
-  text-shadow: #008766;
+  text-decoration-color: #008766;
   padding: 4px 9px 4px 9px;
 }
 
@@ -636,7 +636,7 @@ h2 {
   0% {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    box-shadow: 0;
+    box-shadow: none;
     padding-right: 10px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -645,7 +645,7 @@ h2 {
   100% {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    box-shadow: 0;
+    box-shadow: none;
     padding-right: 0px;
     text-overflow: ellipsis;
     overflow: hidden;
