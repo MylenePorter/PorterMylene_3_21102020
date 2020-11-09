@@ -499,4 +499,161 @@ h2 {
   font-weight: 100;
 }
 
+/*Noir*/
+/*Violet*/
+/*Rose*/
+/*Bleu/Vert*/
+/*Vert*/
+/*Gris*/
+/*Gris clair*/
+/*Gris très clair*/
+/*Gris très très clair*/
+/*Gris foncé*/
+/*Blanc*/
+/*Gradient*/
+/*Restaurant*/
+.menu {
+  position: relative;
+}
+.menu__restau {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 15px 15px 20px;
+  background-color: #eaeaea;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: -20px;
+}
+.menu__restau__name {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.main {
+  background-color: #eaeaea;
+}
+
+/*Noir*/
+/*Violet*/
+/*Rose*/
+/*Bleu/Vert*/
+/*Vert*/
+/*Gris*/
+/*Gris clair*/
+/*Gris très clair*/
+/*Gris très très clair*/
+/*Gris foncé*/
+/*Blanc*/
+/*Gradient*/
+/*Entrées-Plats-Desserts*/
+.course {
+  font-weight: 100;
+  padding-bottom: 20px;
+}
+.course__title {
+  font-weight: 200;
+  font-size: larger;
+  padding: 0px 0px 10px 15px;
+}
+.course__title:after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #99E2D0;
+  left: 0;
+  position: relative;
+  display: block;
+  top: 8px;
+}
+.course__block {
+  display: flex;
+  margin: 15px;
+}
+.course__block__choice {
+  width: 95%;
+  background-color: white;
+  padding: 10px 0px 10px 10px;
+  box-shadow: 1px 3px 8px #a2a2a2;
+  border-radius: 12px;
+}
+.course__block__choice__title {
+  font-size: large;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.course__block__choice__details {
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+}
+.course__block__choice__details__desc {
+  width: 95%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.course__block__choice__details__price {
+  font-weight: bold;
+  width: 15%;
+  justify-content: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.course__block__animation {
+  flex-direction: row;
+  color: white;
+  width: 0px;
+  background-color: #99E2D0;
+  align-self: center;
+  text-align: center;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 1px 3px 8px #a2a2a2;
+  transition: width 2s;
+  overflow: hidden;
+}
+
+@keyframes check-slide {
+  0% {
+    width: 0%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  100% {
+    width: 30px;
+    padding: 25px;
+  }
+}
+.course__block:hover > .course__block__animation {
+  animation: check-slide 0.4s ease-in forwards;
+}
+
+@keyframes squared {
+  0% {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  100% {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0;
+    padding-right: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+.course__block:hover > .course__block__choice {
+  animation: squared 0.4s ease-in forwards;
+}
+
 /*# sourceMappingURL=style.css.map */
