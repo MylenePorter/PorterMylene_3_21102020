@@ -54,7 +54,7 @@
 .button-like--full {
     position: absolute;
     height: 0%;
-    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-image: linear-gradient($bg-button, $bg-button-radient);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -63,7 +63,7 @@
 
 .button-like--empty {
     position: absolute;
-    color: #000
+    color: $link-font;
 }
 
 .button-like__container {
@@ -74,11 +74,13 @@
 
 .button-like__container:hover>.button-like--full {
     height: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
     transition: height 1000ms
 }
 
 .button-like__container:hover>.button-like--empty {
-    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-image: linear-gradient($bg-button, $bg-button-radient);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent
