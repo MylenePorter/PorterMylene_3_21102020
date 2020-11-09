@@ -25,7 +25,7 @@
             display: flex;
             margin: 15px;
             &__choice {
-                width: 95%;
+                width: 100%;
                 background-color: $bg-color-vignettes;
                 padding: 10px 0px 10px 10px;
                 box-shadow: 1px 3px 8px $box-shadow;
@@ -42,7 +42,7 @@
                     flex-direction: row;
                     padding: 2px;
                     &__desc {
-                        width: 95%;
+                        width: 90%;
                         text-overflow: ellipsis;
                         overflow: hidden;
                         white-space: nowrap;
@@ -50,10 +50,8 @@
                     &__price {
                         font-weight: bold;
                         width: 15%;
-                        justify-content: center;
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                        white-space: nowrap;
+                        text-align: end;
+                        padding-right: 10px;
                     }
                 }
             }
@@ -69,15 +67,16 @@
                 box-shadow: 1px 3px 8px #a2a2a2;
                 transition: width 2s;
                 overflow: hidden;
+                padding: 0px;
             }
         }
     }
     
     @keyframes check-slide {
-        0% {
-            width: 0%;
+        1% {
             padding-top: 25px;
             padding-bottom: 25px;
+            width: 0px;
         }
         100% {
             width: 30px;
@@ -87,6 +86,9 @@
     
     .course__block:hover>.course__block__animation {
         animation: check-slide 0.4s ease-in forwards;
+        /*transition: all 0.4s ease-in;
+        width: 30px;
+        padding: 25px;*/
     }
     
     @keyframes squared {

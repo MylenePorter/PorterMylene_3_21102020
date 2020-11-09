@@ -3,7 +3,6 @@
 /* Resets CSS */
 * {
   font-family: "Roboto", sans-serif;
-  text-rendering: optimizeLegibility;
 }
 
 .body {
@@ -181,20 +180,25 @@
 /*Blanc*/
 /*Gradient*/
 #loader {
-  padding-top: 150px;
-  height: 900px;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  height: 100vh;
+  width: 100%;
   animation: appear ease-in 3s forwards;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes appear {
   99% {
-    padding-top: 150px;
-    height: 900px;
+    height: 100vh;
   }
   100% {
-    padding-top: 0px;
     height: 0px;
-    overflow: hidden;
   }
 }
 .loader__spinning {
@@ -426,6 +430,10 @@ h2 {
   padding-left: 20px;
 }
 
+.process__steps:hover i {
+  color: #9356DC;
+}
+
 /*Noir*/
 /*Violet*/
 /*Rose*/
@@ -573,7 +581,7 @@ h2 {
   margin: 15px;
 }
 .course__block__choice {
-  width: 95%;
+  width: 100%;
   background-color: white;
   padding: 10px 0px 10px 10px;
   box-shadow: 1px 3px 8px #a2a2a2;
@@ -592,7 +600,7 @@ h2 {
   padding: 2px;
 }
 .course__block__choice__details__desc {
-  width: 95%;
+  width: 90%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -600,10 +608,8 @@ h2 {
 .course__block__choice__details__price {
   font-weight: bold;
   width: 15%;
-  justify-content: center;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  text-align: end;
+  padding-right: 10px;
 }
 .course__block__animation {
   flex-direction: row;
@@ -617,13 +623,14 @@ h2 {
   box-shadow: 1px 3px 8px #a2a2a2;
   transition: width 2s;
   overflow: hidden;
+  padding: 0px;
 }
 
 @keyframes check-slide {
-  0% {
-    width: 0%;
+  1% {
     padding-top: 25px;
     padding-bottom: 25px;
+    width: 0px;
   }
   100% {
     width: 30px;
@@ -632,6 +639,9 @@ h2 {
 }
 .course__block:hover > .course__block__animation {
   animation: check-slide 0.4s ease-in forwards;
+  /*transition: all 0.4s ease-in;
+  width: 30px;
+  padding: 25px;*/
 }
 
 @keyframes squared {
