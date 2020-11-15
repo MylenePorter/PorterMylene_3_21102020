@@ -58,7 +58,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    transition: height 1000ms
+    transition: height 1000ms;
 }
 
 .button-like--empty {
@@ -76,7 +76,7 @@
     height: 100%;
     background-clip: text;
     -webkit-background-clip: text;
-    transition: height 1000ms
+    transition: height 1000ms;
 }
 
 .button-like__container:hover>.button-like--empty {

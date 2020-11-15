@@ -115,3 +115,25 @@
     .course__block:hover>.course__block__choice {
         animation: squared 0.4s ease-in forwards;
     }
+    
+    .course__block:hover .course__block__animation i {
+        transform: rotate(360deg);
+        transition: all 900ms
+    }
+    /* @keyframes courses-slide {
+        0% {
+            height: 0%;
+            transform: translateY(0);
+        }
+        100% {
+            height: 100%;
+            transform: translateY(100%);
+        }
+    }
+    
+    .course-starters,
+    .course-maindishes,
+    .course-deserts {
+        height: 100%;
+        animation: courses-slide 2s ease-in-out both;
+    }*/
