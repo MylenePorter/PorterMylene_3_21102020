@@ -691,4 +691,15 @@ h2 {
   animation: courses-slide 1200ms ease-in-out;
 }
 
+@media all and (max-width: 345px) {
+  .course__block__choice__details__desc {
+    width: 246.5px;
+  }
+}
+@media only screen and (min-width: 345px) and (max-width: 385px) {
+  .course__block__choice__details__desc {
+    width: 265.5px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
