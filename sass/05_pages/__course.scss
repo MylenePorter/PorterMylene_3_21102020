@@ -73,13 +73,12 @@
 
 @keyframes check-slide {
     0% {
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding: 25px 0px;
         width: 0px;
     }
     100% {
-        width: 30px;
         padding: 25px;
+        width: 30px;
     }
 }
 
@@ -100,7 +99,6 @@
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
         padding-right: 0px;
-        box-shadow: 1px 3px 8px $box-shadow;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
@@ -118,25 +116,42 @@
 
 @keyframes courses-slide {
     0% {
-        transform: translateY(-25%);
-        width: 0%;
+        transform: translateY(40%);
+        height: 0%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.3;
     }
     100% {
         transform: translateY(0%);
-        width: 100%;
+        height: 100%;
+        opacity: 1;
     }
 }
 
 .course-starters {
-    animation: courses-slide 600ms ease-in-out;
+    animation: courses-slide 1000ms ease-in-out;
 }
 
 .course-maindishes {
-    animation: courses-slide 900ms ease-in-out;
+    animation: courses-slide 1300ms ease-in-out;
 }
 
 .course-deserts {
-    animation: courses-slide 1200ms ease-in-out;
+    animation: courses-slide 1600ms ease-in-out;
+}
+
+@keyframes opacity-courses {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media all and (max-width:345px) {

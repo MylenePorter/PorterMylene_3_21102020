@@ -669,9 +669,12 @@ h2 {
 
 @keyframes courses-slide {
   0% {
-    transform: translateY(-40%);
+    transform: translateY(40%);
     height: 0%;
     opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
   }
   100% {
     transform: translateY(0%);
@@ -680,17 +683,28 @@ h2 {
   }
 }
 .course-starters {
-  animation: courses-slide 600ms ease-in-out;
+  animation: courses-slide 1000ms ease-in-out;
 }
 
 .course-maindishes {
-  animation: courses-slide 900ms ease-in-out;
+  animation: courses-slide 1300ms ease-in-out;
 }
 
 .course-deserts {
-  animation: courses-slide 1200ms ease-in-out;
+  animation: courses-slide 1600ms ease-in-out;
 }
 
+@keyframes opacity-courses {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media all and (max-width: 345px) {
   .course__block__choice__details__desc {
     width: 246.5px;
