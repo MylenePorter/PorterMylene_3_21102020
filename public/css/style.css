@@ -50,14 +50,6 @@
   padding: 12px;
 }
 
-/*Flèche retour*/
-.icon__arrow-left {
-  align-self: center;
-  padding: 20px 0px 20px 20px;
-  font-size: larger;
-  width: 10%;
-}
-
 /*Noir*/
 /*Violet*/
 /*Rose*/
@@ -91,8 +83,6 @@
 
 .sub-header__img {
   width: 100%;
-  margin-bottom: -5px;
-  margin-top: -20px;
 }
 
 /*Noir*/
@@ -331,6 +321,14 @@
   margin-left: auto;
   align-self: center;
   font-size: 22px;
+}
+
+/*Flèche retour*/
+.icon__arrow-left {
+  align-self: center;
+  padding: 20px 0px 20px 20px;
+  font-size: larger;
+  width: 10%;
 }
 
 /*Noir*/
