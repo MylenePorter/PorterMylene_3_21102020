@@ -53,7 +53,6 @@
     position: absolute;
     height: 0%;
     background-image: linear-gradient($bg-button, $bg-button-radient);
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -71,21 +70,18 @@
 
 .button-like__container:hover>.button-like--full {
     height: 100%;
-    background-clip: text;
     -webkit-background-clip: text;
     transition: height 1000ms ease-in-out;
 }
 
 .button-like__container>.button-like--full {
     height: 0%;
-    background-clip: text;
     -webkit-background-clip: text;
     transition: height 1000ms ease-in-out;
 }
 
 .button-like__container:hover>.button-like--empty {
     background-image: linear-gradient($bg-button, $bg-button-radient);
-    background-clip: text;
     -webkit-background-clip: text;
     color: black;
 }
