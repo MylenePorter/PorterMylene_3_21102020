@@ -35,7 +35,6 @@
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
-                margin: 0;
             }
             &__details {
                 display: flex;
@@ -204,9 +203,6 @@
         &__details__desc {
             width: 234px;
         }
-        &__title {
-            width: 235px;
-        }
     }
 }
 
@@ -214,9 +210,6 @@
     .course__block__choice {
         &__details__desc {
             width: 265.5px;
-        }
-        &__title {
-            width: 250px;
         }
     }
 }

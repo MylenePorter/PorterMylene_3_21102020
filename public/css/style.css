@@ -474,7 +474,6 @@ h2 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  margin: 0;
 }
 .course__block__choice__details {
   display: flex;
@@ -633,16 +632,10 @@ h2 {
   .course__block__choice__details__desc {
     width: 234px;
   }
-  .course__block__choice__title {
-    width: 235px;
-  }
 }
 @media only screen and (min-width: 345px) and (max-width: 385px) {
   .course__block__choice__details__desc {
     width: 265.5px;
-  }
-  .course__block__choice__title {
-    width: 250px;
   }
 }
 
