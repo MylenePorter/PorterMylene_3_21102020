@@ -1,13 +1,16 @@
-    @import '../02_utils/_colors';
-    /* CSS pour tous  */
-    /* ---HEADER--- */
-    /*Logo*/
-    
-    .header {
-        display: flex;
-        &__logo {
-            margin-left: auto;
-            margin-right: auto;
-            padding: 12px;
-        }
+/* CSS pour tous  */
+
+
+/* ---HEADER--- */
+
+
+/*Logo*/
+
+.header {
+    display: flex;
+    &__logo {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 12px;
     }
+}

@@ -1,5 +1,3 @@
-@import '../02_utils/_colors';
-
 /* ---MAIN--- */
 
 a {
@@ -9,4 +7,10 @@ a {
 
 h2 {
     padding-left: 15px;
+}
+
+.main {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: $bg-pages-menu;
 }

@@ -1,5 +1,3 @@
-@import '../02_utils/_colors';
-
 /*Entrées-Plats-Desserts*/
 
 .course {
@@ -37,6 +35,7 @@
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
+                margin: 0;
             }
             &__details {
                 display: flex;
@@ -71,7 +70,7 @@
     }
 }
 
-@keyframes check-slide {
+@keyframes check-slide_in {
     0% {
         padding: 25px 0px;
         width: 0px;
@@ -83,14 +82,37 @@
 }
 
 .course__block:hover>.course__block__animation {
-    animation: check-slide 0.5s ease-in-out both;
+    animation: check-slide_in 0.5s ease-in-out both;
 }
 
-@keyframes squared {
+@keyframes check-slide_out {
+    0% {
+        padding: 25px;
+        width: 30px;
+    }
+    100% {
+        padding: 25px 0px;
+        width: 0px;
+    }
+}
+
+.course__block>.course__block__animation {
+    animation: check-slide_out 0.4s ease-in-out both;
+}
+
+@keyframes squared_in {
     0% {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
         padding-right: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    99% {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding-right: 0px;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
@@ -106,12 +128,35 @@
 }
 
 .course__block:hover>.course__block__choice {
-    animation: squared 0.4s ease-in forwards;
+    animation: squared_in 0.5s ease-in forwards;
+}
+
+@keyframes squared_out {
+    0% {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding-right: 0px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    100% {
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        padding-right: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.course__block>.course__block__choice {
+    animation: squared_out 0.4s ease-in forwards;
 }
 
 .course__block:hover .course__block__animation i {
     transform: rotate(360deg);
-    transition: all 900ms
+    transition: all 900ms;
 }
 
 @keyframes courses-slide {
@@ -155,13 +200,23 @@
 }
 
 @media all and (max-width:345px) {
-    .course__block__choice__details__desc {
-        width: 246.5px;
+    .course__block__choice {
+        &__details__desc {
+            width: 234px;
+        }
+        &__title {
+            width: 235px;
+        }
     }
 }
 
 @media only screen and (min-width:345px) and (max-width:385px) {
-    .course__block__choice__details__desc {
-        width: 265.5px;
+    .course__block__choice {
+        &__details__desc {
+            width: 265.5px;
+        }
+        &__title {
+            width: 250px;
+        }
     }
 }
