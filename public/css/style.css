@@ -583,7 +583,7 @@ h2 {
 .course__block__choice {
   width: 100%;
   background-color: white;
-  padding: 10px 0px 10px 10px;
+  padding: 13px 10px 12px 10px;
   box-shadow: 1px 3px 8px #a2a2a2;
   border-radius: 12px;
 }
@@ -635,7 +635,7 @@ h2 {
   }
 }
 .course__block:hover > .course__block__animation {
-  animation: check-slide 0.5s ease-in-out forwards;
+  animation: check-slide 0.5s ease-in-out both;
 }
 
 @keyframes squared {
