@@ -1,6 +1,7 @@
 /* pour lancer la compilation du sass en css :  sass --watch ./sass/style.scss ./public/css/style.css */
 
 // base
+@import '../sass/01_base/__fa';
 @import '../sass/01_base/__reset';
 // utils
 @import '../sass/02_utils/__colors';
